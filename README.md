@@ -1,15 +1,18 @@
-A sample README.md file
+# NLP18 Virtual Escape Room
 
-# Project Name
 ---
-## The Goal of this project is
+## The Goal of Project
+TBD
 
-## Code status, pre-release, production.
+## Code status, pre-release, production
+TBD
 
 ## Installation Process
+TBD
 
 ## Contact Information
+TBD
 
-## Acknowledgement for reused code if any
+
 
 
