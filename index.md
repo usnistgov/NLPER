@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+---
+layout: cover
+title: "New Leader Program (NLP) #18 - Capstone Project"
+description: "Virtual Escape Room Highlighting NIST Research Projects"
+---
+<!-- section class="home home-title" markdown="1" -->
 
-You can use the [editor on GitHub](https://github.com/usnistgov/NLPER/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Virtual Escape Room
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<!-- /section -->
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+<!-- section class="home home-about" markdown="1" -->
+<!-- div class="section-container" markdown="1" -->
 ```markdown
-Syntax highlighted code block
+For 100 years, the National Institute of Standards and Technology has helped to keep U.S. technology at the leading edge. Over the years, NIST has made solid contributions to image processing, DNA diagnostic "chips," smoke detectors, and automated error-correcting software for machine tools. NIST also has had major impact on atomic clocks, X-ray standards for mammography, scanning tunneling microscopy, pollution-control technology, and high-speed dental drills.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Founded on March 3, 1901, as the National Bureau of Standards, NIST was one of the first federal research laboratories. NIST's major accomplishments of the past 100 years and their impact on industry, science and technology, the nation's economy, and the public — are described in [NIST at 100: Foundations for Progress](https://www.nist.gov/history/nist-100-foundations-progress).
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Fast forwarding to 2020: few members of the New Leader Program (NLP), class #18, decided to implement an Escape Room highlighting NIST research topics as part of their capstone. As COVID-19 pandemic affected our lives and work, the team members decided to take few of the research topics that could be converted to digital stories and create a virtual excape room. If interested to see the game, please enter [here](./Escape-Room-Cover-Story.html)
 
-### Jekyll Themes
+#### Contact Us
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/usnistgov/NLPER/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[nlper@nist.gov](mailto:nlper@nist.gov)
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!-- /div -->
+<!-- /section -->
