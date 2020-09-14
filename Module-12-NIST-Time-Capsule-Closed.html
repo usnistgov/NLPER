@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>NLP Virtual Escape Room Module #12</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+		<link rel="stylesheet" href="NLPER-room.css">
+    </head>
+    <body id="body">
+        <script >
+               setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    if (div !== null) 
+                    {
+                      var count = div.textContent * 1 - 1;
+                      div.textContent = count;                 
+                      if (count <= 0) {
+                            window.location.replace("./CountDown.html");
+                        }
+                    }
+                }, 1000);
+
+                function LogIn() {
+                    var password = document.getElementById('psw')
+                    var psw_value = password.value.toLowerCase();
+                    var loggedin = false;  
+                    console.log(`Password = ${password}; Value = ${psw_value}`);
+                    //password=prompt("Enter password:","");
+                    if (psw_value=="NOBELglasses870859") { 
+                      loggedin=true;
+                      window.location="./Module-99-final.html";
+                    } else {
+                      if (psw_value=="nobelglasses870859") {
+                        loggedin=true;
+                        window.location="./Module-99-final.html";
+                      }
+                    }
+                }
+       </script>     
+    <span style="width:100%; text-align:center; max-width:100vw"> 
+      <h1 style="color:white ; font-size:4vw; line-height: 0px; font-family: sans-serif;">NIST's Time Capsule</h1>
+			<br><img src="images/time_capsule.png" alt="Time Capsule" style="height:75vh" >
+		</span>
+        <form style="font-size: 3vh; color: rgb(255, 119, 0);"> 
+          <label for="psw">To open the Time Capsule, enter the master key composed of your 3 separate keys you found or derived, concatenated: </label>
+          <input type="password" id="psw" name="psw" required>
+          <input type="button" value="Submit" color="red" onClick="LogIn()" style="font-size: 24px;">
+        </form>
+      </div>
+    <br/>
+      <div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(52, 52, 241); text-align: center;">
+        <a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+      </div>
+    </body>
+</html>
+       

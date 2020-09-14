@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+      <title>A Secret Code Protected by NIST Scientists</title>
+      <meta charset="UTF-8"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+  <link rel="stylesheet" href="NLPER-room.css">
+
+  </head>
+  <body id="body"; style="vertical-align: baseline;">
+    <script>
+      setInterval(function() {
+          var div = document.querySelector("#counter");
+          if (div !== null) 
+          {
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;                 
+            if (count <= 0) {
+                  window.location.replace("./CountDown.html");
+              }
+          }
+      }, 1000);
+    </script>     
+		<span style="width:100%; text-align:center; max-width:100vw; font-size: 4vh; color:white"> 
+      A Secret Code Protected by NIST Scientists
+		</span>
+			<br><br>
+	  <div style="width:100%; text-align:center; max-width:100vw; font-size: 6vh; color:white;">
+      <span id="mya" style="font-size: 3.5vh; text-align: center;">
+          <br>Go back to the <a href="./Escape-Room-Lobby.html">Lobby</a> and search for what ...<br>
+      </span>
+      <span style="font-size: 3.5vh; text-align: center; font-style: italic;">
+          "... Looks like the innocent flower,<br>
+          But is a serpent under it."<br>
+      </span>
+      <span style="font-size: 2.5vh; text-align: right;">  
+          — adaptation, William Shakespeare (Macbeth)<br><br><br><br>
+      </span>
+      <div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(182, 32, 6); text-align: center;">
+        <a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+      </div>
+    </div>
+  </body>
+</html>
+       

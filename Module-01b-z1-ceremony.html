@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>A Secret Code Protected by NIST Scientists</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+		<link rel="stylesheet" href="NLPER-room.css">
+    </head>
+    <body id="body">
+        <script >
+               setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    if (div !== null) 
+                    {
+                      var count = div.textContent * 1 - 1;
+                      div.textContent = count;                 
+                      if (count <= 0) {
+                            window.location.replace("./CountDown.html");
+                        }
+                    }
+                }, 1000);
+
+                function LogIn() {
+                    var password = document.getElementById('psw')
+                    var psw_value = password.value.toLowerCase();
+                    var loggedin = false;  
+                    console.log(`Password = ${password}; Value = ${psw_value}`);
+                    //password=prompt("Enter password:","");
+                    if (psw_value=="nobel") { 
+                      loggedin=true;
+                      window.location="./Module-01b-z2-open-chest.html";
+                    }
+                }
+       </script>    
+		<span style="width:100%; text-align:center; max-width=100vw; font-size: 4vh; color:white"> 
+			A Secret Code Protected by NIST Scientists
+			<br><br>
+		<span style="font-size: 3vh">
+			An Award Ceremony (2012):
+		<span style="width:100%; text-align:center; max-width=100vw"> 
+			<br><img src="images/ceremony-dave.jpg" alt="Ceremony Dave" style="height:30vh" >
+		</span>
+		<!--	
+		<video width="320" height="240" controls autoplay>
+			<source src="Dave-Wineland.webm">
+			<source src="Dave-Wineland.ogv" type="video/ogg"> 
+			Your browser does not support the video tag.
+		</video>
+		-->
+		<br><br>
+		Five NIST scientists have it in common!
+		<span style="width:100%; text-align:center; max-width=100vw"> 
+			<br><img src="images/locked-chest.jpg" alt="Locked Chest" style="height:30vh" >
+		</span>
+        <form style="font-size: 3vh; color: rgb(255, 119, 0);"> 
+          <label for="psw"> Answer: </label>
+          <input type="password" id="psw" name="psw" required>
+          <input type=button value="Submit" color="red" onClick="LogIn()" style="font-size: 24px;">
+        </form>
+     <div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(182, 32, 6); text-align: center;">
+         <a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+      </div>
+    </body>
+</html>
+        

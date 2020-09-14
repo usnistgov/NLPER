@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>NLP Virtual Escape Room Module #2</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+		<link rel="stylesheet" href="NLPER-room.css">
+
+    </head>
+    <body id="body"; style="vertical-align: baseline;">
+        <script>
+               setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    if (div !== null) 
+                    {
+                      var count = div.textContent * 1 - 1;
+                      div.textContent = count;                 
+                      if (count <= 0) {
+                            window.location.replace("./CountDown.html");
+                        }
+                    }
+                }, 1000);
+       </script>     
+    <span style="width:100%; text-align:center; max-width=100vw;"> 
+      <h1 style="color:white; text-align:center; font-size:4vw; line-height: 0px; font-family: sans-serif;">Simultaneous Measures of Soft Materials </h1>
+			<img src="images/RR_1.png" alt="3-in-1 Rheo-Raman Microscope" style="height:80vh" >
+		</span>
+    <br/>
+      <div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(182, 32, 6); text-align: center;">
+        <!--- a href="./NLP_Virtual_Escape_Room_Framework.html">BACK</a --->
+        <a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+      </div>
+    </body>
+</html>
+       

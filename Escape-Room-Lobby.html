@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>NLP Virtual Escape Room</title>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+
+    <style>
+      * { box-sizing: border-box; }
+      
+      body { font-family: Arial, Helvetica, sans-serif; }
+                
+      /* Style the header */
+      /* background-color: #666; */
+      header { padding: 5px; text-align: left; font-size: 70px; height: auto; color: white; }
+      
+      /* Create two columns/boxes that floats next to each other */
+      /* only for demonstration, should be removed */
+      nav { float: left; width: 30%; height: 300px; background: #ccc; padding: 20px; }
+      
+      /* Style the list inside the menu */
+      nav ul { list-style-type: none; padding: 0; }
+      
+      /* only for demonstration, should be removed */
+      article { float: left; padding: 20px; width: 70%; background-color: #f1f1f1; height: 300px; }
+      
+      /* Clear floats after the columns */
+      section:after { content: ""; display: table; clear: both; }
+      
+      /* Style the footer */
+      footer { background-color: #777; padding: 10px; text-align: center; color: white; }
+      
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        nav, article {
+          width: 100%;
+          height: auto;
+        }
+      }
+      
+      #body { background-color: black; display: flex; flex-wrap: wrap; align-content: flex-end; text-align:center; }
+      
+      #main {display: flex; flex-wrap: wrap; align-content: flex-end; }
+      
+      #div { height: 100%; 
+        background-image: url('images/beacon.jpg'); 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        }
+
+        p { text-align: center; font-size: 50px; margin-top: 0px; color: white; }
+
+      /* Luis: to wrap around the class thumbnail, to print the thumbnail within a box of null size */
+      .LBthumb { float:left; width:0px; height:0px; transform:scale(1,1)}
+
+      /* Luis 2020/Jul/17: LBglass produces a transparent rectangle that can be wraped with a hyperlink, using <a href ...> */
+      .LBglass { 
+        position:relative; top:0; left:0; display:inline-block; 
+        width:480px; height:250px; margin:20px; 
+        opacity:0.00; background-color:#000000; border:1px; }
+
+      /* the width and height here are your resultant sizes. */
+      .thumbnail { width:500px; height:270px; float:left; margin:10px; position:relative; }
+
+		  /* the width 1000px and height 560px here are your "unshrunken" sizes.  Important because of the scale variable later. */
+      .thumbnail iframe {
+        position: relative; z-index: 1; 
+			  width: 1777px; height: 1000px;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform:  scale(0.25, 0.25);   /* Gets the size down to fit into your .thumbnail. */
+        -moz-transform:  scale(0.25, 0.25);      /* Gets the size down to fit into your .thumbnail. */
+        transform:  scale(0.25, 0.25);           /* Gets the size down to fit into your .thumbnail. */
+        overflow: scroll;
+      }
+
+      .thumbnail a { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+      #mya a:link { color:#0404fc; background-color:#000000; }
+      #mya a:visited { color:#fc0000; background-color:#000000; }
+      #mya a:hover { color:#ffffff; background-color:#000000; }
+      #mya a:active { color:#03f840; background-color:#00ff00; }
+		</style>
+  </head>
+  <body id="body">
+      <script >
+              setInterval(function() {
+                  var div = document.querySelector("#counter");
+                  if (div !== null) 
+                  {
+                    var count = div.textContent * 1 - 1;
+                    div.textContent = count;                 
+                    if (count <= 0) {
+                          window.location.replace("./CountDown.html");
+                      }
+                  }
+              }, 1000);
+      </script> 
+    
+    <div id="mya" style="width:100%; text-align:center; font-size: 3vh;">
+      <span><a href="./Escape-Room-Cover-Story.html">Click here to restart the game.</a>
+      </br>
+      </span>
+      <!-- <h2 style="color:#00ff00;">To enter any room of the game, click at the bottom of the window under the green bar.</h2> -->
+    </div >
+
+<!-- ===== ROW 1 ===== -->
+      
+  <!-- Time counter -->
+  <span style="margin:0px"><div class="thumbnail"><iframe src="./Module-01a-countdown.html"></iframe></div></span>
+
+  <!-- Door Come In -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-01b-Come-in-door.html"></iframe></div></div>
+  <!--  "https://docs.google.com/forms/d/e/1FAIpQLSe6Ao25PTIZABDk2FEo1MqpFUkW1-F5slN4nlyCQkrMa1vL2A/viewform"  -->
+  <a href="./Module-01b-z1-ceremony.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Randomness Beacon -->
+  <span><div class="LBthumb"><div class="thumbnail"><iframe src="./Module-01c-beacon-initial.html"></iframe></div></div>
+  <a href="./Module-01c-beacon-initial.html" target="_blank"><div class="LBglass"></div></a></span>
+
+
+  <!-- Slide William Phillips -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-01-William-Phillips.html"></iframe></div></div>
+  <a href="./Module-01-William-Phillips.html" target="_blank"><div class="LBglass"></div></a></span>
+
+<!-- ===== ROW 2 ===== -->
+
+  <!-- Slide Rheo-Raman Microscope -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-02-Rheo-Raman-Microscope.html"></iframe></div></div>
+  <a href="./Module-02-Rheo-Raman-Microscope.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Slide David Wineland -- NOBEL in Physics -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-03-David-Wineland.html"></iframe></div></div>
+  <a href="./Module-03-David-Wineland.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Slide Marie Curie -- NOBEL in Physics -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-04-Marie-Curie.html"></iframe></div></div>
+  <a href="./Module-04-Marie-Curie.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Slide Dan Schechtman -- NOBEL in Chemistry -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-05-Dan-Shechtman.html"></iframe></div></div>
+  <a href="./Module-05-Dan-Shechtman.html" target="_blank"><div class="LBglass"></div></a></span>
+
+<!-- ===== ROW 3 ===== -->  
+  
+  <!-- Laser Spectroscopy -- JOHN L JAN HALL-->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-06-John-Hall.html"></iframe></div></div>
+  <a href="./Module-06-John-Hall.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- William Basil Mann -- Gallium Isotope -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-07-Wilfrid-Basil-Mann.html"></iframe></div></div>
+  <a href="./Module-07-Wilfrid-Basil-Mann.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- First Digital Photo -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-08-First-Digital-Photo.html"></iframe></div></div>
+  <a href="./Module-08-First-Digital-Photo.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Eric Allin Cornell -- Nobel Physics -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-09-Eric-Allin-Cornell.html"></iframe></div></div>
+  <a href="./Module-09-Eric-Allin-Cornell.html" target="_blank"><div class="LBglass"></div></a></span>
+
+<!-- ===== ROW 4 ===== -->
+
+  <!-- Noah Ernest Dorsey -- Radium -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-10-Noah-Ernest-Dorsey.html"></iframe></div></div>
+  <a href="./Module-10-Noah-Ernest-Dorsey.html" target="_blank"><div class="LBglass"></div></a></span>
+
+
+  <!-- Leon F. Curtiss -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-11-Leon-F-Curtiss.html"></iframe></div></div>
+  <a href="./Module-11-Leon-F-Curtiss.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Time Capsule -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-12-NIST-Time-Capsule-Closed.html"></iframe></div></div>
+  <a href="./Module-12-NIST-Time-Capsule-Closed.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Scrappping paper for Secret Sharing -->
+  <span><div class="LBthumb"> <div class="thumbnail"><iframe src="./Module-13-get-scrapping-paper.html"></iframe></div></div>
+  <a href="./Module-13-get-scrapping-paper.html" target="_blank"><div class="LBglass"></div></a></span>
+
+  <!-- Threshold  Cryptography -->
+  <span><div class="LBthumb"><div class="thumbnail"><iframe src="./Module-14-threshold.html"></iframe></div></div>
+  <a href="./Module-14-threshold.html" target="_blank"><div class="LBglass"></div></a></span>
+  
+    
+  </body>
+</html>
+       

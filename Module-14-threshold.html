@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Info about the NIST Randomness Beacon</title> 
+		<style>
+		* {box-sizing: border-box; }
+		
+		/* Create two equal columns that floats next to each other */
+		.column1 {float: left; width: 68%; padding: 10px; height: 75vh; font-family: sans-serif;}
+		.column2 {float: left; width: 32%; padding: 10px; height: 75vh;font-family: sans-serif;}
+		
+		/* Clear floats after the columns */
+		.row:after {content: ""; display: table; clear: both; }
+		
+		body {background-color: #000000;} /* black background */
+		</style>
+    </head> 
+    <body>
+        <script >
+               setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    if (div !== null) 
+                    {
+                      var count = div.textContent * 1 - 1;
+                      div.textContent = count;                 
+                      if (count <= 0) {
+                            window.location.replace("./CountDown.html");
+                        }
+                    }
+                }, 1000);
+		</script>
+		<h1 style="color:white; text-align:center; font-size:4vw; line-height: 0px; font-family: sans-serif;">Threshold Cryptography at NIST</h1>
+		<p style="color:white; text-align:center; font-size:2vw; ">
+		Source: <a href="https://csrc.nist.gov/Projects/Threshold-Cryptography/">https://csrc.nist.gov/Projects/Threshold-Cryptography/</a>
+		</p>
+
+		<div class="row">
+			<div class="column1">
+				<span style="color:white; font-size:2.0vw;">
+					NIST established the Threshold Cryptography project to drive an effort to standardize threshold schemes for cryptographic primitives. Threshold schemes enable distribution of trust placed on human operators, and mitigate several single-points of failure in conventional cryptographic implementations.
+					
+					<br><br>Threshold schemes often rely on 
+					<span style="color:yellow">secret-sharing schemes</span>,
+					which 
+					<span style="color:yellow">split a secret into parts, called shares</span>.
+					Any “share” is unintelligible on its own, but 
+					<span style="color:yellow">by combining several shares it is possible to recover the secret</span>.
+					For example, Charlie can split a secret into two shares and send one to Alice and another to Bob.
+					
+					<br><br>Threshold schemes go beyond secret-sharing and enable crypto operations (such as signing, encrypting and decrypting) without ever reconstructing the key in any place.
+
+					<br><br>
+					<span style="text-align:right; display:block; font-size:1.2vw"> Additional information: https://doi.org/10.6028/NIST.IR.8214A</span> 
+					
+					<br>
+					<span style="font-size:1vw; text-align:right">(Hint: this is just an informative slide ... you need to go somewhere else to find two shares and reconstruct a secret)</span> 
+					<br>
+				</span>
+			</div>					
+			<div class="column2">	
+				<span style="text-align:center; font-size:1.5vw;  line-height: 1.5;">
+					<span style="color:#ffcc00;">
+						A simple example of <u>Secret-Sharing</u>
+					</span>
+					<br>
+					<span style="color:#ffffff; text-align:center; padding: 0vw">
+						Reconstruct <span style="color:red  ">Charlie</span>'s 3-digit key from
+					</span>
+					<br>
+					<span style="color:#ffffff; text-align:center; padding: 0vw">
+						the shares given to <span style="color:#ffcc00">Alice </span>and
+						<span style="color:#aad400">Bob</span>
+					</span>
+					<object type="image/svg+xml" data="images/ss-demo.svg" width="100%" >
+					Your browser does not support SVG
+					</object>
+				</span>
+			</div>
+		</div>
+		<div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(182, 32, 6); text-align: center;">
+			<a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+		</div>
+    </body> 
+</html>     
+
+
+

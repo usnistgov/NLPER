@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Info about the NIST Randomness Beacon</title> 
+		<style>
+		* {box-sizing: border-box; }
+		
+		/* Create two equal columns that floats next to each other */
+		.column1 {float: left; width: 69%; padding: 10px; height: 73vh;}
+		.column2 {float: left; width: 31%; padding: 10px; height: 73vh;}
+		
+		/* Clear floats after the columns */
+		.row:after {content: ""; display: table; clear: both; }
+		
+		body {background-color: #000000; font-family: sans-serif;} /* black background */
+		</style>
+    </head> 
+    <body>
+        <script >
+			setInterval(function() {
+				var div = document.querySelector("#counter");
+				if (div !== null) 
+				{
+					var count = div.textContent * 1 - 1;
+					div.textContent = count;                 
+					if (count <= 0) {
+						window.location.replace("./CountDown.html");
+					}
+				}
+			}, 1000);
+
+			function LogIn() {
+				var password = document.getElementById('psw')
+				var psw_value = password.value.toLowerCase();
+				var loggedin = false;  
+				console.log(`Password = ${password}; Value = ${psw_value}`);
+				//password=prompt("Enter password:","");
+				if (psw_value=="736857") { 
+					loggedin=true;
+					window.location="./Module-01c-beacon-success.html";
+				}
+				//[COLOR="#FF0000"] else {[/COLOR]
+					//window.location="./NLP_Virtual_Escape_Room_Module_8_visible.html";
+
+				//}
+		    }
+		</script>
+		<h1 style="color:white; text-align:center; font-size:4vw; line-height: 0px;font-family: sans-serif;">The NIST Randomness Beacon</h1>
+		<p style="color:white; text-align:center; font-size:1.5vw; ">
+		Source: <a href="https://csrc.nist.gov/Projects/Interoperable-Randomness-Beacons">https://csrc.nist.gov/Projects/Interoperable-Randomness-Beacons</a>
+		</p>
+		<div class="row">
+			<div class="column1">
+				<span style="color:white; font-size:1.68vw; height: 90vh;">
+				A randomness beacon produces timed outputs of fresh public randomness. This randomness can be used to promote public auditability of public processes that depend on random selections (audits, lotteries, etc).
+				
+				<br><br>The first public prototype of the NIST randomness beacon was launched in 2013.  
+				In 2019, the Interoperable Randomness Beacons project at NIST published a new reference for randomness beacons (version 2.0).
+				
+				<br><br>The NIST Randomness Beacon creates a new 
+				<span style="color:yellow">pulse </span>
+				every minute, with an 
+				“<span style="color:yellow">output value</span>” with 512 random bits. 
+				Each pulse is hash-chained to previous pulses, and contains other metadata to support several security features. 
+				Also, every past pulse must be available for public scrutiny.
+		
+				<br><br>For internationl interoperability, 
+				each pulse has a timestamp in Universal Time Coordinate (UTC) format.
+				For exampl, the <span style="color:yellow">pulse #694662</span> has 
+				timestamp 2020-01-01T00:00:00.000Z (the first in year 2020, in the timezone of Greenwich). 
+				In hexadecimal, the "output value" of this pulse starts with "CBC9AA". 
+				<span style="color:yellow">
+				What are its last six hexadecimal characters?
+				</span> 
+				
+				<br><br><span style="text-align:right; display:block;">(Hint: search where to click)
+				<br>
+				</span>
+				<div>
+					<form style="font-size: 1.85vw; color: rgb(255, 119, 0);"> 
+					<label for="psw"> Enter here the 6 last hexadecimal characters: </label>
+					<input type="password" id="psw" name="psw" required style="font-size: 1.2vw">
+					<input type=button value=" Submit " color="red" onClick="LogIn()" style="font-size: 1.2vw">
+					</form>
+				</div>	
+			</div>
+			<div class="column2">
+				Beacon figure
+				<object type="image/svg+xml" data="images/beacon-clipart-transparent.svg" width="100%">
+					Your browser does not support SVG
+				</object>
+			</div>
+		</div>
+		<div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(182, 32, 6); text-align: center;">
+			<a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+		</div>
+    </body> 
+</html>     
+
+
+

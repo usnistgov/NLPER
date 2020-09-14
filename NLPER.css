@@ -1,0 +1,66 @@
+<style>
+          * { box-sizing: border-box; }
+		  
+			/* Create two equal columns that floats next to each other */
+			.column1 {float: left; width: 69%; padding: 10px; height: 300px;}
+			.column2 {float: left; width: 31%; padding: 10px; height: 300px;}
+          
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          
+          /* Style the header */
+          header {
+           /* background-color: #666; */
+            padding: 5px;
+            text-align: left;
+            font-size: 70px;
+            height: auto;
+            color: white;
+          }
+          
+ 
+          
+          #body {
+            background-color: black;
+            height: 90vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+            text-align:center;
+          }
+
+          
+        #div {
+			width: 100%; 
+			height: 80%;
+			background-image: url('images/lighthouse-anim.gif'); 
+			background-repeat: no-repeat; 
+            background-size: contain;   <!-- contain; -->
+			background-position: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 300px;
+            margin-top: 0px;
+            color: white;
+          }
+
+
+
+          #mya a:link { color:#0404fc; background-color:#000000; }
+          #mya a:visited { color:#fc0000; background-color:#000000; }
+          #mya a:hover { color:#ffffff; background-color:#000000; }
+          #mya a:active { color:#03f840; background-color:#00ff00; }
+
+footer {
+  margin: -30px 0 0 0;
+  width: 100%;
+  height: 30px;
+  <!-- background-color: green; -->
+}
+
+
+          </style>

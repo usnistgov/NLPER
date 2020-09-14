@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>NLP Virtual Escape Room Module #12</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+		<link rel="stylesheet" href="NLPER-room.css">
+    </head>
+    <body id="body">
+        <script >
+               setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    if (div !== null) 
+                    {
+                      var count = div.textContent * 1 - 1;
+                      div.textContent = count;                 
+                      if (count <= 0) {
+                            window.location.replace("./CountDown.html");
+                        }
+                    }
+                }, 1000);
+       </script> 
+  		<span style="width:100%; text-align:center; max-width=100vw"> 
+			<br><img src="images/papirus_feather_guide.png" alt="Get Scrapping Paper" style="height:88vh">
+		</span>
+		<div id="mya" style="width:100%; font-size: 3vh; text-align: center;">           
+            <a href="./Module-13-zz-auxi-ssgame.html">Click here to get the paper!</a><br><br>
+		</div>
+      <div style="width:100%; hight:100%; background:rgb(10, 241, 60); font-size: 30px; color:rgb(52, 52, 241); text-align: center;">
+        <!-- a href="./NLP_Virtual_Escape_Room_Framework.html">BACK</a -->
+        <a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+      </div>
+    </body>
+</html>
+       

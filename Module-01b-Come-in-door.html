@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>NLP Virtual Escape Room Entrance</title>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height"></meta>
+        <style>
+          * {box-sizing: border-box;}
+
+          
+          header {
+           /* background-color: #666; */
+            padding: 5px;
+            text-align: left;
+            font-size: 70px;
+            height: auto;
+            color: white;
+          }
+     
+          
+          #div {
+            height: 100%;
+            width: 100%;
+            background-image: url('images/Gates_0.gif'); 
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size:contain;
+           }
+
+        p {
+            text-align: center;
+            font-size: 8hv;
+            margin-top: 0px;
+            color: white;
+          }
+
+          </style>
+    </head>
+    <body id="body">
+        <script >
+               setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    if (div !== null) 
+                    {
+                      var count = div.textContent * 1 - 1;
+                      div.textContent = count;                 
+                      if (count <= 0) {
+                            window.location.replace("./CountDown.html");
+                        }
+                    }
+                }, 1000);
+		</script>     
+		<div id="div">         
+			<header >
+            </br></br></br>
+            </br></br></br>
+            </br></br></br>
+            <p>COME IN</p>
+            </header>              
+		</div>
+
+      <div style="width:100%; height:4vh; background:rgb(10, 241, 60); font-size: 3vh; color:rgb(9, 9, 244); text-align: center;">
+        <!-- a href="./NLP_Virtual_Escape_Room_Framework.html">BACK</a -->
+        <a href="javascript:window.open('','_self').close();">CLOSE THIS PAGE AND RETURN TO THE LOBBY</a>
+      </div>
+    </body>
+</html>
+       

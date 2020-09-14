@@ -1,0 +1,113 @@
+<style>
+    * { box-sizing: border-box; 
+    font-family: sans-serif;}
+		  
+    /* Create two equal columns that floats next to each other */
+    .column1 {float: left; width: 69%; padding: 10px; height: 300px;}
+    .column2 {float: left; width: 31%; padding: 10px; height: 300px;}
+    
+    body {
+      font-family: sans-serif;
+    }
+      
+    /* Style the header */
+    header {
+      /* background-color: #666; */
+      font-family: sans-serif;
+      padding: 5px;
+      text-align: left;
+      font-size: 70px;
+      height: auto;
+      color: white;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+  #body {
+      background-color: black;
+      height: 95vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      text-align:center;
+      font-family: sans-serif;
+    }
+    
+  #main {
+      height: 650px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-end;
+    }
+    
+  #div {
+    width: 100%; 
+    height: 80%;
+    background-repeat: no-repeat; 
+          background-size: contain;
+    background-position: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 300px;
+    margin-top: 0px;
+    color: white;
+    font-family: sans-serif;
+  }
+
+ element.style {
+   font-family: sans-serif;
+ }
+
+  #mya a:link { color:#0404fc; background-color:#000000; }
+  #mya a:visited { color:#fc3f00fe; background-color:#000000; }
+  #mya a:hover { color:#ffffff; background-color:#000000; }
+  #mya a:active { color:#03f840; background-color:#00ff00; }
+
+  footer {
+    margin: -30px 0 0 0;
+    width: 100%;
+    height: 30px;
+    background-color: green;
+  }
+</style>
