@@ -19,6 +19,9 @@ Fast forwarding to 2020: few members of the New Leader Program (NLP), class #18,
 If you are interested in playing the game, please enter: </p>
  [HERE](./NLPER/Escape-Room-Cover-Story.html)
 
+<p>
+TBD - game description
+</p>
 
 ### Contact Us
 
