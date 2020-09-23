@@ -1,0 +1,3 @@
+In 2001, NIST encapsulated valuable artifacts inside the now famous NIST Time Capsule for future remembrance.
+Fifty years passed and NIST needs to open the capsule and recover a valuable artifact but the custodian cannot find the code to open the time capsule.
+A backup copy of the code has been well protected by a set of riddles. Only those aware of the research diversity at NIST will succeed. You have 60 minutes to resolve the riddles and help the Time Capsules custodian recover the code.
