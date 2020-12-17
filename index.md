@@ -1,6 +1,10 @@
 
 ## NLP18: NIST Virtual Escape Room
 
+
+If you would like to skip the introduction and go straight to playing the game, please enter:  [HERE](https://pages.nist.gov/NLPER/Escape-Room-Cover-Story.html)
+
+
 <p>
   For 100 years, the National Institute of Standards and Technology has helped to keep U.S. technology at the leading edge. Over the years, NIST has made solid contributions to image processing, DNA diagnostic "chips," smoke detectors, and automated error-correcting software for machine tools. NIST also has had major impact on atomic clocks, X-ray standards for mammography, scanning tunneling microscopy, pollution-control technology, and high-speed dental drills.
 </p>
@@ -26,7 +30,7 @@ The NLP Virtual Escape Room brings the player to the year 2051 when the NIST Tim
 
 ![NIST Time Capsule (located in the NIST Library, near the entrance)](https://pages.nist.gov/NLPER/images/NIST_time_capsule_small.jpeg)
 
-</br>
+
 
 ### Game creators:
 
