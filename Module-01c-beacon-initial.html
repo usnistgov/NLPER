@@ -6,8 +6,8 @@
 		* {box-sizing: border-box; }
 		
 		/* Create two equal columns that floats next to each other */
-		.column1 {float: left; width: 69%; padding: 10px; height: 73vh;}
-		.column2 {float: left; width: 31%; padding: 10px; height: 73vh;}
+		.column1 {float: left; width: 70%; padding: 10px; height: 80vh;}
+		.column2 {float: right; width: 30%; padding: 10px; height: 80vh;}
 		
 		/* Clear floats after the columns */
 		.row:after {content: ""; display: table; clear: both; }
@@ -45,43 +45,22 @@
 				//}
 		    }
 		</script>
-		<h1 style="color:white; text-align:center; font-size:4vw; line-height: 0px;font-family: sans-serif;">The NIST Randomness Beacon</h1>
+		<h1 style="color:white; text-align:center; font-size:3vw; line-height: 0px;font-family: sans-serif;">The NIST Randomness Beacon</h1>
 		<p style="color:white; text-align:center; font-size:1.5vw; ">
-		Source: <a href="https://csrc.nist.gov/Projects/Interoperable-Randomness-Beacons">https://csrc.nist.gov/Projects/Interoperable-Randomness-Beacons</a>
+			Source: <a href="https://csrc.nist.gov/Projects/Interoperable-Randomness-Beacons">https://csrc.nist.gov/Projects/Interoperable-Randomness-Beacons</a>
 		</p>
 		<div class="row">
 			<div class="column1">
-				<span style="color:white; font-size:1.68vw; height: 90vh;">
-				A randomness beacon produces timed outputs of fresh public randomness. This randomness can be used to promote public auditability of public processes that depend on random selections (audits, lotteries, etc).
-				
-				<br><br>The first public prototype of the NIST randomness beacon was launched in 2013.  
-				In 2019, the Interoperable Randomness Beacons project at NIST published a new reference for randomness beacons (version 2.0).
-				
-				<br><br>The NIST Randomness Beacon creates a new 
-				<span style="color:yellow">pulse </span>
-				every minute, with an <span style="color:yellow">"output value"</span> with 512 random bits. 
-				Each pulse is hash-chained to previous pulses, and contains other metadata to support several security features. 
-				Also, every past pulse must be available for public scrutiny.
-		
-				<br><br>For internationl interoperability, 
-				each pulse has a timestamp in Universal Time Coordinate (UTC) format.
-				For exampl, the <span style="color:yellow">pulse #694662</span> has 
-				timestamp 2020-01-01T00:00:00.000Z (the first in year 2020, in the timezone of Greenwich). 
-				In hexadecimal, the "output value" of this pulse starts with "CBC9AA". 
-				<span style="color:yellow">
-				What are its last six hexadecimal characters?
-				</span> 
-				
-				<br><br><span style="text-align:right; display:block;">(Hint: search where to click)
-				<br>
+			    <span style="width:100%; text-align:center; max-width:100vw;"> 
+					<img src="images/beacon-riddle.jpg" alt="NIST Randomness Beacon" style="height:70vh" >
 				</span>
-				<div>
-					<form style="font-size: 1.85vw; color: rgb(255, 119, 0);"> 
-					<label for="psw"> Enter here the 6 last hexadecimal characters: </label>
-					<input type="password" id="psw" name="psw" required style="font-size: 1.2vw">
-					<input type=button value=" Submit " color="red" onClick="LogIn()" style="font-size: 1.2vw">
-					</form>
-				</div>	
+				<span>
+					<form style="font-size: 1.5vw; color: rgb(255, 119, 0);"> 
+					<label for="psw">Enter in the window the last six hexadecimal characters and click the 'Submit' button. </label></br>
+					<input type="password" id="psw" name="psw" required style="font-size: 1.0vw">
+					<input type=button value=" Submit " color="red" onClick="LogIn()" style="font-size: 1.0vw">
+					</form>	
+				</span>
 			</div>
 			<div class="column2">
 				Beacon figure

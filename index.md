@@ -2,7 +2,7 @@
 ## NLP18: NIST Virtual Escape Room
 
 
-If you would like to skip the introduction and go straight to playing the game, please enter:  [HERE](https://pages.nist.gov/NLPER/Escape-Room-Cover-Story.html)
+### If you would like to skip the introduction and go straight to playing the game, please enter:  [HERE](https://pages.nist.gov/NLPER/Escape-Room-Cover-Story.html)
 
 
 <p>
